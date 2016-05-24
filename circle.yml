@@ -12,6 +12,3 @@ dependencies:
     - php artisan key:generate
     - mysql -e "CREATE DATABASE IF NOT EXISTS \`$DB_DATABASE\` DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_unicode_ci";
 
-#test:
-#  override:
-#    - echo "[WIP]"
