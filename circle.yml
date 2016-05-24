@@ -2,6 +2,11 @@ machine:
   php:
     version: 5.5.11
 
+dependencies:
+  pre:
+    - cp .env.example .env
+    - php artisan key:generate
+
 #test:
 #  override:
 #    - echo "[WIP]"
