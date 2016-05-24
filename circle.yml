@@ -1,11 +1,16 @@
 machine:
   php:
     version: 5.5.11
+  environment:
+    DB_DATABASE: homestead
+    DB_USERNAME: circle
+    DB_PASSWORD:
 
 dependencies:
   post:
     - cp .env.example .env
     - php artisan key:generate
+    - mysql -e "CREATE DATABASE IF NOT EXISTS \`$DB_DATABASE\` DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_unicode_ci";
 
 #test:
 #  override:
