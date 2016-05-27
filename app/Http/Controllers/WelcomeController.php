@@ -10,7 +10,7 @@ class WelcomeController extends Controller {
 
 	public function getHello()
 	{
-		return "hello world!!";
+		return "hello!!!!";
 	}
 }
 
