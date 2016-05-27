@@ -20,6 +20,6 @@ class ExampleTest extends TestCase
 	public function testHello()
     {
         $this->visit('/hello')
-             ->see('hello world');
+             ->see('hello');
     }
 }
